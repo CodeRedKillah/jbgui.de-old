@@ -278,5 +278,6 @@ navlink {
 }
 
 .big-title {
-    font-family: 'SF Text Bold', sans-serif;
+    font-family: 'SF Text', sans-serif;
+    font-weight: bold;
 }

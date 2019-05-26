@@ -71,7 +71,7 @@
   
   /** Bold */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Bold";
     font-weight: 700;
     src: url("https://sf.abarba.me/SF-UI-Text-Bold.otf");
   }
@@ -278,5 +278,5 @@ navlink {
 }
 
 .big-title {
-    font-family: 'SF Text', semibold;
+    font-family: 'SF Text Bold', sans-serif;
 }

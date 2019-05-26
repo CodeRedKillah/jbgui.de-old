@@ -285,6 +285,12 @@ navlink {
   color: black;
 }
 
+.big-title-subtitle {
+  font-family: 'SF Text Semibold', sans-serif;
+  font-size: 45px;
+  color: #494949;
+}
+
 navbar-hr {
   color: #dddddd;
 }

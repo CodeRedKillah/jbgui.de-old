@@ -1,0 +1,11 @@
+nav {
+    background-color: #c87e37;
+    height: 50px;
+    width: 100%;
+}
+
+.navlink {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}

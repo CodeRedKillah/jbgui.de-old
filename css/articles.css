@@ -286,3 +286,7 @@ p.big-title {
 navbar-hr {
   color: #dddddd;
 }
+
+#article-container {
+  max-width: 80%;
+}

@@ -4,63 +4,63 @@
 
 /** Black */
 @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Black";
     font-weight: 900;
     src: url("https://sf.abarba.me/SF-UI-Display-Black.otf");
   }
   
   /** Bold */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Bold";
     font-weight: 700;
     src: url("https://sf.abarba.me/SF-UI-Display-Bold.otf");
   }
   
   /** Heavy */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Heavy";
     font-weight: 800;
     src: url("https://sf.abarba.me/SF-UI-Display-Heavy.otf");
   }
   
   /** Light */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Light";
     font-weight: 200;
     src: url("https://sf.abarba.me/SF-UI-Display-Light.otf");
   }
   
   /** Medium */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Medium";
     font-weight: 500;
     src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
   }
   
   /** Regular */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Regular";
     font-weight: 400;
     src: url("https://sf.abarba.me/SF-UI-Display-Regular.otf");
   }
   
   /** Semibold */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Semibold";
     font-weight: 600;
     src: url("https://sf.abarba.me/SF-UI-Display-Semibold.otf");
   }
   
   /** Thin */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Thin";
     font-weight: 300;
     src: url("https://sf.abarba.me/SF-UI-Display-Thin.otf");
   }
   
   /** Ultralight */
   @font-face {
-    font-family: "SF Display";
+    font-family: "SF Display Ultralight";
     font-weight: 100;
     src: url("https://sf.abarba.me/SF-UI-Display-Ultralight.otf");
   }
@@ -78,7 +78,7 @@
   
   /** Bold Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Bold Italic";
     font-weight: 700;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-BoldItalic.otf");
@@ -86,14 +86,14 @@
   
   /** Heavy */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Heavy";
     font-weight: 800;
     src: url("https://sf.abarba.me/SF-UI-Text-Heavy.otf");
   }
   
   /** Heavy Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Heavy Italic";
     font-weight: 800;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
@@ -101,14 +101,14 @@
   
   /** Light */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Light";
     font-weight: 200;
     src: url("https://sf.abarba.me/SF-UI-Text-Light.otf");
   }
   
   /** Light Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Light Italic";
     font-weight: 200;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-HeavyItalic.otf");
@@ -116,14 +116,14 @@
   
   /** Medium */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Medium";
     font-weight: 500;
     src: url("https://sf.abarba.me/SF-UI-Text-Medium.otf");
   }
   
   /** Medium Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Medium Italic";
     font-weight: 500;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-MediumItalic.otf");
@@ -131,14 +131,14 @@
   
   /** Regular */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Regular";
     font-weight: 400;
     src: url("https://sf.abarba.me/SF-UI-Text-Regular.otf");
   }
   
   /** Regular Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Regular Italic";
     font-weight: 400;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-RegularItalic.otf");
@@ -146,14 +146,14 @@
   
   /** Semibold */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Semibold";
     font-weight: 600;
     src: url("https://sf.abarba.me/SF-UI-Text-Semibold.otf");
   }
   
   /** Semibold Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Semibold Italic";
     font-weight: 600;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-SemiboldItalic.otf");
@@ -161,14 +161,14 @@
   
   /** Ultrathin */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Ultrathin";
     font-weight: 100;
     src: url("https://sf.abarba.me/SF-UI-Text-Ultrathin.otf");
   }
   
   /** Ultrathin Italic */
   @font-face {
-    font-family: "SF Text";
+    font-family: "SF Text Ultrathin Italic";
     font-weight: 100;
     font-style: italic;
     src: url("https://sf.abarba.me/SF-UI-Text-UltrathinItalic.otf");
@@ -180,14 +180,14 @@
   
   /** Bold */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Bold";
     font-weight: 700;
     src: url("https://sf.abarba.me/SFMono-Bold.otf");
   }
   
   /** Bold Italic */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Bold Italic";
     font-weight: 700;
     font-style: italic;
     src: url("https://sf.abarba.me/SFMono-BoldItalic.otf");
@@ -195,14 +195,14 @@
   
   /** Heavy */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Heavy";
     font-weight: 800;
     src: url("https://sf.abarba.me/SFMono-Heavy.otf");
   }
   
   /** Heavy Italic */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Heavy Italic";
     font-weight: 800;
     font-style: italic;
     src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
@@ -210,14 +210,14 @@
   
   /** Light */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Light";
     font-weight: 200;
     src: url("https://sf.abarba.me/SFMono-Light.otf");
   }
   
   /** Light Italic */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Light Italic";
     font-weight: 200;
     font-style: italic;
     src: url("https://sf.abarba.me/SFMono-HeavyItalic.otf");
@@ -225,14 +225,14 @@
   
   /** Medium */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Medium";
     font-weight: 500;
     src: url("https://sf.abarba.me/SFMono-Medium.otf");
   }
   
   /** Medium Italic */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Medium Italic";
     font-weight: 500;
     font-style: italic;
     src: url("https://sf.abarba.me/SFMono-MediumItalic.otf");
@@ -240,14 +240,14 @@
   
   /** Regular */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Regular";
     font-weight: 400;
     src: url("https://sf.abarba.me/SFMono-Regular.otf");
   }
   
   /** Regular Italic */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Regular Italic";
     font-weight: 400;
     font-style: italic;
     src: url("https://sf.abarba.me/SFMono-RegularItalic.otf");
@@ -255,7 +255,7 @@
   
   /** Semibold */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Semibold";
     font-weight: 600;
     src: url("https://sf.abarba.me/SFMono-Semibold.otf");
   }
@@ -279,6 +279,5 @@ navlink {
 
 p.big-title {
     font-family: 'SF Text', sans-serif;
-    font-weight: bold;
     font-size: 60px;
 }

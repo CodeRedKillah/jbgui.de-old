@@ -262,7 +262,7 @@
   
   /** Semibold Italic */
   @font-face {
-    font-family: "SF Mono";
+    font-family: "SF Mono Semibold Italic";
     font-weight: 600;
     font-style: italic;
     src: url("https://sf.abarba.me/SFMono-SemiboldItalic.otf");

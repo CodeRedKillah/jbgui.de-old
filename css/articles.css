@@ -297,6 +297,11 @@ navlink {
   color: black;
 }
 
+.sections-list {
+  font-family: "SF Text Semibold", sans-serif;
+  font-size: 25px;
+}
+
 navbar-hr {
   color: #dddddd;
 }
@@ -308,4 +313,8 @@ navbar-hr {
 
 code {
   font-family: 'SF Mono Regular';
+}
+
+html {
+  scroll-behavior: smooth;
 }

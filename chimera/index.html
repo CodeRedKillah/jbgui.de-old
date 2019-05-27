@@ -1,19 +1,189 @@
 <!DOCTYPE html>
-
+<!--#include file="/header.html" -->
 <html>
 
 <head>
-    <title>Chimera</title>
+  <title>Jailbreak Guides</title>
+  <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+  <link rel="stylesheet" type="text/css" href="/css/articles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="unc0ver - Jailbreak Guides">
+  <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
+  <meta property="og:url" content="https://jbgui.de">
+  <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
 </head>
 
 <body>
-    <p>
-        Chimera jailbreak for ios 12-12.1.2 (A12 Support)
-    </p>
+
+  <br>
+
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://jbgui.de">
+        <img src="/img/logo.png" width="240" height="29">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://jbgui.de/unc0ver/">
+          unc0ver
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/chimera">
+          Chimera
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
+          Package Managers
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://jbgui.de/electra">
+              Electra
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/legacy">
+              Legacy
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/other">
+              Other
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+      </div>
+  </nav>
+  <hr class="navbar-hr">
+
+  <br>
+  <div class="article-container">
+
+    <div class="article-top">
+
+      <div class="columns">
+
+        <div class="column">
+
+          <div class="intro">
+
+            <p class="big-title">unc0ver</p>
+            <p class="big-title-subtitle">Jailbreak for iOS 11.0 - 12.1.2 (no support for A12 devices)</p>
+            <br>
+            <br>
+            <div class="sections-list">
+              <p class="article-subtitle">Sections</p>
+              <ul>
+
+                <li><a class="section-list-item" href="#comparison">unc0ver light vs. dark: which to choose?
+                  </a></li>
+                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+                  </a></li>
+                <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                  </a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="column">
+          <div class="promo-image">
+            <img src="/img/unc0ver/unc0ver-promo2.png" <br>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="article-maintext">
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+              el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+              });
+            });
+          }
+
+        });
+      </script>
+    </div>
+  </div>
 </body>
-<a href="https://chimera.sh/">Website</a>
-<a href="guides/install.html">Installation</a>
-<a href="guides/error.html">Common Errors and Fixes</a>
-<a href="guides/remove.html">Uninstall</a>
+
+<footer>
+
+  <hr class="navbar-footer">
+
+  <p align="center">Made with <i class="fas fa-heart" style="color: #e85369;"></i> by our contributors on <a
+      href="https://github.com/coderedkillah/jbgui.de">GitHub</a></p>
+  <br>
+
+</footer>
 
 </html>

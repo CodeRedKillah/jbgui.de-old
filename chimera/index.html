@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Jailbreak Guides</title>
+  <title>Chimera - Jailbreak Guides</title>
   <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
   <link rel="stylesheet" type="text/css" href="/css/articles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="unc0ver - Jailbreak Guides">
+  <meta property="og:title" content="Chimera - Jailbreak Guides">
   <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
   <meta property="og:url" content="https://jbgui.de">
   <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
@@ -44,6 +44,35 @@
       });
     });
   </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
 </head>
 
 <body>
@@ -72,7 +101,7 @@
         <a class="navbar-item" href="https://jbgui.de/chimera">
           Chimera
         </a>
-        <a class="navbar-item" href="https://jbgui.de/package-managers">
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
           Package Managers
         </a>
 
@@ -110,16 +139,14 @@
 
           <div class="intro">
 
-            <p class="big-title">unc0ver</p>
-            <p class="big-title-subtitle">Jailbreak for iOS 11.0 - 12.1.2 (no support for A12 devices)</p>
+            <p class="big-title">Chimera</p>
+            <p class="big-title-subtitle">Jailbreak for iOS 12.0 - 12.1.2 (supports A12 devices)</p>
             <br>
             <br>
             <div class="sections-list">
               <p class="article-subtitle">Sections</p>
               <ul>
 
-                <li><a class="section-list-item" href="#comparison">unc0ver light vs. dark: which to choose?
-                  </a></li>
                 <li><a class="section-list-item" href="#install-pc">Installation (with computer)
                   </a></li>
                 <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
@@ -135,7 +162,7 @@
 
         <div class="column">
           <div class="promo-image">
-            <img src="/img/unc0ver/unc0ver-promo2.png" <br>
+            <img src="/img/chimera/chimera-promo.png" <br>
           </div>
         </div>
 
@@ -145,35 +172,51 @@
 
     <div class="article-maintext">
 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
+      <div id="comparison">
 
-          // Get all "navbar-burger" elements
-          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        <p class="article-subtitle">unc0ver vs. unc0ver dark: which to choose?</p>
+        <br>
+        <p class="article-text">
+          If you're looking to jailbreak with unc0ver, you have two options; the standard unc0ver by <a
+            href="https://twitter.com/Pwn20wnd">Pwn20wnd</a>, or
+          <a href="https://dark.diatr.us">unc0ver
+            dark</a>, a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)">fork</a> of the original
+          unc0ver
+          project developed by <a href="https://twitter.com/versusess">Shady</a> and <a
+            href="twitter.com/pinseeker75">Diatrus</a>, which adds support for <a
+            href="https://jbgui.de/sileo/">Sileo</a>
+          and a theme switcher with 3 preset themes (True Black, Dark Purple, White).</p>
+        <br>
+        <p>As for which to choose, it's up to
+          you. Keep in mind standard unc0ver does not offer Sileo, only dark, and on unc0ver dark you have the ability
+          to
+          use Cydia and Sileo at the same time.</p>
+        <br>
+        <p>If Sileo just doesn't interest you and neither does a theme switcher,
+          then stick with unc0ver. If one or multiple of unc0ver dark's features interests you, then use unc0ver dark.
+        </p>
+        <br>
+      </div>
 
-          // Check if there are any navbar burgers
-          if ($navbarBurgers.length > 0) {
+      <br>
 
-            // Add a click event on each of them
-            $navbarBurgers.forEach(el => {
-              el.addEventListener('click', () => {
+      <div id="install-pc">
 
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
+        <p class="article-subtitle">Installation (with PC)</p>
+        <br>
+        <p class="article-text">
+          This is the preferred method of installing jailbreak apps onto one's device, but
+          there is a method to do it without a computer if needed. If you <em>have</em> a computer, then read on.</p>
+        <br>
+        <p>To get started, you'll need to install <a href="http://cydiaimpactor.com">Cydia Impactor</a> on your
+          computer. Simply click the link and install it like any other program.</p>
+        <br>
+      </div>
 
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-              });
-            });
-          }
-
-        });
-      </script>
     </div>
+
   </div>
+
 </body>
 
 <footer>

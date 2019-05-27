@@ -72,8 +72,8 @@
         <a class="navbar-item" href="https://jbgui.de/chimera">
           Chimera
         </a>
-        <a class="navbar-item" href="https://jbgui.de/sileo">
-          Sileo
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
+          Package Managers
         </a>
 
         <div class="navbar-item has-dropdown is-hoverable">
@@ -84,9 +84,6 @@
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://jbgui.de/electra">
               Electra
-            </a>
-            <a class="navbar-item" href="https://jbgui.de/cydia">
-              Cydia
             </a>
             <a class="navbar-item" href="https://jbgui.de/legacy">
               Legacy
@@ -105,28 +102,32 @@
   <br>
   <div class="article-container">
 
-    <div class="columns">
+    <div class="article-top">
 
-      <div class="column">
+      <div class="columns">
 
-        <div class="intro">
+        <div class="column">
 
-          <p class="big-title">unc0ver</p>
-          <p class="big-title-subtitle">Jailbreak for iOS 11.0 - 12.1.2 (no support for A12 devices)</p>
-          <br>
-          <br>
-          <div class="sections-list">
-            <p class="article-subtitle">Sections</p>
-            <ul>
+          <div class="intro">
 
-              <li><a class="section-list-item" href="#comparison">unc0ver light vs. dark: which to choose?
-                </a></li>
-              <li><a class="section-list-item" href="#install-pc">Installation (with computer)
-                </a></li>
-              <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
-                </a></li>
+            <p class="big-title">unc0ver</p>
+            <p class="big-title-subtitle">Jailbreak for iOS 11.0 - 12.1.2 (no support for A12 devices)</p>
+            <br>
+            <br>
+            <div class="sections-list">
+              <p class="article-subtitle">Sections</p>
+              <ul>
 
-            </ul>
+                <li><a class="section-list-item" href="#comparison">unc0ver light vs. dark: which to choose?
+                  </a></li>
+                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+                  </a></li>
+                <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                  </a></li>
+
+              </ul>
+
+            </div>
 
           </div>
 
@@ -142,33 +143,35 @@
 
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
+    <div class="article-maintext">
 
-        // Get all "navbar-burger" elements
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
-        // Check if there are any navbar burgers
-        if ($navbarBurgers.length > 0) {
+          // Get all "navbar-burger" elements
+          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-          // Add a click event on each of them
-          $navbarBurgers.forEach(el => {
-            el.addEventListener('click', () => {
+          // Check if there are any navbar burgers
+          if ($navbarBurgers.length > 0) {
 
-              // Get the target from the "data-target" attribute
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+              el.addEventListener('click', () => {
 
-              // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
 
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+              });
             });
-          });
-        }
+          }
 
-      });
-    </script>
+        });
+      </script>
 </body>
 
 

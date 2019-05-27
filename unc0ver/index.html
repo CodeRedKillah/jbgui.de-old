@@ -74,38 +74,30 @@
   </script>
 
   <script>
-    var smoothScroll = function (elementId) {
-      var MIN_PIXELS_PER_STEP = 16;
-      var MAX_SCROLL_STEPS = 30;
-      var target = document.getElementById(elementId);
+    window.smoothScroll = function (target) {
       var scrollContainer = target;
-      do {
+      do { //find scroll container
         scrollContainer = scrollContainer.parentNode;
         if (!scrollContainer) return;
         scrollContainer.scrollTop += 1;
       } while (scrollContainer.scrollTop == 0);
 
       var targetY = 0;
-      do {
+      do { //find the top of target relatively to the container
         if (target == scrollContainer) break;
         targetY += target.offsetTop;
       } while (target = target.offsetParent);
 
-      var pixelsPerStep = Math.max(MIN_PIXELS_PER_STEP,
-        (targetY - scrollContainer.scrollTop) / MAX_SCROLL_STEPS);
-
-      var stepFunc = function () {
-        scrollContainer.scrollTop =
-          Math.min(targetY, pixelsPerStep + scrollContainer.scrollTop);
-
-        if (scrollContainer.scrollTop >= targetY) {
-          return;
-        }
-
-        window.requestAnimationFrame(stepFunc);
-      };
-
-      window.requestAnimationFrame(stepFunc);
+      scroll = function (c, a, b, i) {
+        i++;
+        if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function () {
+          scroll(c, a, b, i);
+        }, 20);
+      }
+      // start scrolling
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
     }
   </script>
 
@@ -186,9 +178,11 @@
                 <li><a class="section-list-item" onclick="smoothScroll(document.getElementById('comparison'))">unc0ver
                     light vs. dark: which to choose?
                   </a></li>
-                <li><a class="section-list-item" onclick="smoothScroll(document.getElementById('install-pc'))">Installation (with computer)
+                <li><a class="section-list-item"
+                    onclick="smoothScroll(document.getElementById('install-pc'))">Installation (with computer)
                   </a></li>
-                <li><a class="section-list-item" onclick="smoothScroll(document.getElementById('install-nopc'))">Installation (no computer)
+                <li><a class="section-list-item"
+                    onclick="smoothScroll(document.getElementById('install-nopc'))">Installation (no computer)
                   </a></li>
 
               </ul>

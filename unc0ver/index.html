@@ -44,6 +44,35 @@
       });
     });
   </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
 </head>
 
 <body>
@@ -72,7 +101,7 @@
         <a class="navbar-item" href="https://jbgui.de/chimera">
           Chimera
         </a>
-        <a class="navbar-item" href="https://jbgui.de/package-managers">
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
           Package Managers
         </a>
 
@@ -143,37 +172,34 @@
 
     </div>
 
+    <br>
+
     <div class="article-maintext">
 
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
+      <div class="comparison">
 
-          // Get all "navbar-burger" elements
-          const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        <p class="article-subtitle">unc0ver light vs. dark: which to choose?</p>
 
-          // Check if there are any navbar burgers
-          if ($navbarBurgers.length > 0) {
+        <p class="article-text">
+          If you're looking to jailbreak with unc0ver, you have two options; the standard unc0ver by Pwn20wnd, or
+          unc0ver
+          dark, a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)">fork</a> of the original unc0ver
+          project developed by <a href="https://twitter.com/versusess">Shady</a> and <a
+            href="twitter.com/pinseeker75">Diatrus</a>, which adds support for <a
+            href="https://jbgui.de/sileo/">Sileo</a>
+          and a theme switcher with 3 preset themes (True Black, Dark Purple, White). As for which to choose, it's up to
+          you. Keep in mind standard unc0ver does not offer Sileo, only dark, and on unc0ver dark you have the ability
+          to
+          use Cydia and Sileo at the same time. If Sileo just doesn't interest you and neither does a theme switcher,
+          then stick with unc0ver. If one of unc0ver dark's features interests you, then use that.</p>
+        </p>
 
-            // Add a click event on each of them
-            $navbarBurgers.forEach(el => {
-              el.addEventListener('click', () => {
+      </div>
 
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-              });
-            });
-          }
-
-        });
-      </script>
     </div>
+
   </div>
+
 </body>
 
 <footer>

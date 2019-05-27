@@ -301,6 +301,7 @@ navlink {
   font-family: "SF Text Semibold", sans-serif;
   font-size: 25px;
   list-style-type: none;
+  float: left;
 }
 
 navbar-hr {

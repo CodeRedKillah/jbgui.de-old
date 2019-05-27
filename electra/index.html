@@ -1,15 +1,244 @@
 <!DOCTYPE html>
-
+<!--#include file="/header.html" -->
 <html>
-  <head>
-    <title>Electra</title>
-  </head>
-  <body>
-    <p>
-      Jailbreak for all iOS devices on 11-11.4.1
-      </p>
-  </body>
-<a href="=https://coolstar.org/electra">Website</a>
-<a href="guides/install.html">Installation</a>
-<a href="guides/error.html" >Common Errors and Fixes</a>
+
+<head>
+  <title>unc0ver - Jailbreak Guides</title>
+  <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
+  <link rel="stylesheet" type="text/css" href="/css/articles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="unc0ver - Jailbreak Guides">
+  <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
+  <meta property="og:url" content="https://jbgui.de">
+  <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <br>
+
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://jbgui.de">
+        <img src="/img/logo.png" width="240" height="29">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="https://jbgui.de/unc0ver/">
+          unc0ver
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/chimera">
+          Chimera
+        </a>
+        <a class="navbar-item" href="https://jbgui.de/packagemanagers">
+          Package Managers
+        </a>
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More
+          </a>
+
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://jbgui.de/electra">
+              Electra
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/legacy">
+              Legacy
+            </a>
+            <a class="navbar-item" href="https://jbgui.de/other">
+              Other
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-end">
+      </div>
+  </nav>
+  <hr class="navbar-hr">
+
+  <br>
+  <div class="article-container">
+
+    <div class="article-top">
+
+      <div class="columns">
+
+        <div class="column">
+
+          <div class="intro">
+
+            <p class="big-title">Electra</p>
+            <p class="big-title-subtitle">for iOS 11.0 - 11.4.1</p>
+            <br>
+            <br>
+            <div class="sections-list">
+              <p class="article-subtitle">Sections</p>
+              <ul>
+
+                <li><a class="section-list-item" href="#comparison">Electra or unc0ver?
+                  </a></li>
+                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+                  </a></li>
+                <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                  </a></li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="column">
+          <div class="promo-image">
+            <img src="/img/electra/electra-promo.png" <br>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="article-maintext">
+
+      <div id="comparison">
+
+        <p class="article-subtitle">Electra or unc0ver?</p>
+        <br>
+        <p class="article-text">
+
+          If you're looking to jailbreak with unc0ver, you have two options; the standard unc0ver by <a
+            href="https://twitter.com/Pwn20wnd">Pwn20wnd</a>, or
+          <a href="https://dark.diatr.us">unc0ver
+            dark</a>, a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)">fork</a> of the original
+          unc0ver
+          project developed by <a href="https://twitter.com/versusess">Shady</a> and <a
+            href="twitter.com/pinseeker75">Diatrus</a>, which adds support for <a
+            href="https://jbgui.de/package-managers/sileo.html">Sileo</a>
+          and a theme switcher with 3 preset themes (True Black, Dark Purple, White).</p>
+        <br>
+        <p>As for which to choose, it's up to
+          you. Keep in mind standard unc0ver does not offer Sileo, only dark, and on unc0ver dark you have the ability
+          to
+          use Cydia and Sileo at the same time.</p>
+        <br>
+        <p>If Sileo just doesn't interest you and neither does a theme switcher,
+          then stick with unc0ver. If one or multiple of unc0ver dark's features interests you, then use unc0ver dark.
+        </p>
+        <br>
+      </div>
+
+      <div id="install-pc">
+
+        <p class="article-subtitle">Installation (with computer)</p>
+        <br>
+        <p class="article-text">
+          This is the preferred method of installing jailbreak apps onto one's device, but
+          there is a method to do it without a computer if needed. If you <em>have</em> a computer, then read on.</p>
+        <br>
+        <p>To get started, you'll need to install <a href="http://cydiaimpactor.com">Cydia Impactor</a> on your
+          computer. Simply click the link and install it like any other program.</p>
+        <br>
+      </div>
+
+      <div id="install-nopc">
+
+        <p class="article-subtitle">Installation (without computer)</p>
+          <br>
+         <p class="article-text"><b>Note: This method is only successful when a signing service has a valid certificate.</b></p> 
+          <br>
+         <p class="article-text"></p>
+
+        
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+<footer>
+
+  <hr class="navbar-footer">
+
+  <p align="center">Made with <i class="fas fa-heart" style="color: #e85369;"></i> by our contributors on <a
+      href="https://github.com/coderedkillah/jbgui.de">GitHub</a></p>
+  <br>
+
+</footer>
+
 </html>

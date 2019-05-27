@@ -297,11 +297,16 @@ navlink {
   color: black;
 }
 
+.intro {
+  position: relative;
+}
+
 .sections-list {
   font-family: "SF Text Semibold", sans-serif;
   font-size: 25px;
   list-style-type: none;
   float: left;
+  position: relative;
 }
 
 .section-list-item {

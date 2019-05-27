@@ -14,6 +14,7 @@
     <meta property="og:description" content="Helpful, open source guides relating to iOS jailbreaking.">
     <meta property="og:url" content="https://jbgui.de">
     <meta property="og:image" content="https://i.vgy.me/IVzE8H.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -67,13 +68,7 @@
                     </div>
                 </div>
             </div>
-
             <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                    </div>
-                </div>
-            </div>
         </div>
     </nav>
     <hr class="navbar-hr">
@@ -83,5 +78,31 @@
         back later!</p>
 
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
 
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+</script>
 </html>

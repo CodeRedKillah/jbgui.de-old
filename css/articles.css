@@ -320,3 +320,16 @@ code {
 html {
   scroll-behavior: smooth;
 }
+
+#construction {
+  text-align: center;
+  line-height: 52px;
+  color: white;
+  font-size: 1.28em; 
+  float: center;
+}
+#top {
+  position: fixed;
+  top: 52px;
+  width: 100%;
+}

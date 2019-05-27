@@ -307,6 +307,11 @@ navbar-hr {
   color: #dddddd;
 }
 
+navbar-footer {
+  color: #dddddd;
+  width: 100%;
+}
+
 .article-container {
   max-width: 90%;
   margin: auto;

@@ -308,6 +308,10 @@ navlink {
   float: left;
 }
 
+.promo-image {
+  float: right;
+}
+
 navbar-hr {
   color: #dddddd;
 }

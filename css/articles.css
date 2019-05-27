@@ -304,6 +304,10 @@ navlink {
   float: left;
 }
 
+.section-list-item {
+  float: left;
+}
+
 navbar-hr {
   color: #dddddd;
 }

@@ -73,6 +73,42 @@
     });
   </script>
 
+  <script>
+    var smoothScroll = function (elementId) {
+      var MIN_PIXELS_PER_STEP = 16;
+      var MAX_SCROLL_STEPS = 30;
+      var target = document.getElementById(elementId);
+      var scrollContainer = target;
+      do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = 0;
+      do {
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      var pixelsPerStep = Math.max(MIN_PIXELS_PER_STEP,
+        (targetY - scrollContainer.scrollTop) / MAX_SCROLL_STEPS);
+
+      var stepFunc = function () {
+        scrollContainer.scrollTop =
+          Math.min(targetY, pixelsPerStep + scrollContainer.scrollTop);
+
+        if (scrollContainer.scrollTop >= targetY) {
+          return;
+        }
+
+        window.requestAnimationFrame(stepFunc);
+      };
+
+      window.requestAnimationFrame(stepFunc);
+    }
+  </script>
+
 </head>
 
 <body>
@@ -147,11 +183,12 @@
               <p class="article-subtitle">Sections</p>
               <ul>
 
-                <li><a class="section-list-item" href="#comparison">unc0ver light vs. dark: which to choose?
+                <li><a class="section-list-item" onclick="smoothScroll(document.getElementById('comparison'))">unc0ver
+                    light vs. dark: which to choose?
                   </a></li>
-                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+                <li><a class="section-list-item" onclick="smoothScroll(document.getElementById('install-pc'))">Installation (with computer)
                   </a></li>
-                <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
+                <li><a class="section-list-item" onclick="smoothScroll(document.getElementById('install-nopc'))">Installation (no computer)
                   </a></li>
 
               </ul>
@@ -195,6 +232,10 @@
         </p>
 
       </div>
+
+      <br>
+
+
 
     </div>
 

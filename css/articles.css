@@ -293,9 +293,14 @@ navlink {
   color: black;
 }
 
+.image-subtitle {
+  font-family: "SF Text Light", sans-serif;
+  font-size: 14px;
+}
+
 .sections-list {
   font-family: "SF Text Semibold", sans-serif;
-  font-size: 25px;
+  font-size: 22px;
   list-style-type: none;
 }
 

@@ -5,7 +5,7 @@
 <head>
   <title>unc0ver - Jailbreak Guides</title>
   <link rel="shortcut icon" href="https://i.vgy.me/KY96Du.png">
-  <link rel="stylesheet" type="text/css" href="/css/articles.css">
+  <link rel="stylesheet" type="text/css" href="../css/articles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="apple-touch-icon" href="https://i.vgy.me/IVzE8H.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
@@ -147,15 +147,17 @@
               <p class="article-subtitle">Sections</p>
               <ul>
 
+                <li><a class="section-list-item" href="#about">What is unc0ver?
+                  </a></li>
                 <li><a class="section-list-item" href="#comparison">unc0ver or unc0ver dark?
                   </a></li>
-                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+                <li><a class="section-list-item" href="#install-pc">Installation
                   </a></li>
                 <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
                   </a></li>
-                <li><a class="section-list-item" href="#remove">Removal
+                <li><a class="section-list-item" href="#remove">Removing unc0ver
                   </a></li>
-                <li><a class="section-list-item" href="#faq">Frequently asked questions
+                <li><a class="section-list-item" href="#faq">FAQ
                   </a></li>
 
               </ul>
@@ -178,13 +180,32 @@
 
     <div class="article-maintext">
 
+        <div id="about">
+
+            <p class="article-subtitle">What is unc0ver?</p>
+            <br>
+            <p class="article-text">
+              unc0ver is an <a 
+              href="https://en.wikipedia.org/wiki/Open-source_software">open-source</a> jailbreak tool for Apple devices with versions iOS 11.0 to 12.1.2.
+              Maintained by <a
+              href="https://twitter.com/Pwn20wnd">pwn20wnd</a> and <a 
+              href="https://twitter.com/sbingner">Sam Bingner</a>, this jailbreak tool uses <a 
+              href="http://www.cydiasubstrate.com">Cydia Substrate</a> to load, run, and patch your system with tweaks in real time. This tool includes a number of settings
+              to adjust your jailbroken state and diagnose any issues you might have.
+              </p>
+              <br>
+              <p class="article-text">
+                You can view the source code of unc0ver <a href="https://github.com/pwn20wndstuff/undecimus">here</a>.
+              </p>
+            <br>
+          </div>
+
       <div id="comparison">
 
         <p class="article-subtitle">unc0ver or unc0ver dark?</p>
         <br>
         <p class="article-text">
-          If you're looking to jailbreak with unc0ver, you have two options; the original unc0ver by <a
-            href="https://twitter.com/Pwn20wnd">Pwn20wnd</a>, or
+          If you're looking to jailbreak with unc0ver, you have two options; the original unc0ver, or
           <a href="https://dark.diatr.us">unc0ver
             dark</a>, a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)">fork</a> of the
           unc0ver
@@ -193,9 +214,7 @@
             href="https://jbgui.de/sileo/">Sileo</a>,
           and allows you to change the look of your jailbreak application using a theme switcher, with preset options (True Black, Dark Purple, and White).</p>
         <br>
-        <p>Keep in mind, unc0ver (original) does not offer Sileo, or any application theming options. On unc0ver Dark, you have the ability
-          to
-          use Cydia and Sileo at the same time.</p>
+        <p>unc0ver (original) does not offer support for Sileo, or application theming options provided by unc0ver dark.</p>
         <br>
       </div>
 
@@ -203,15 +222,45 @@
 
       <div id="install-pc">
 
-        <p class="article-subtitle">Installation (with computer)</p>
+        <p class="article-subtitle">Standard Installation</p>
         <br>
         <p class="article-text">
           This is the preferred method of installing jailbreak apps onto one's device, but
-          there is a method to do it without a computer if needed. If you <em>have</em> a computer, then read on.</p>
+          there is a method to do it without a computer if needed. If you <em>don't</em> have a computer, click <a href="#install-nopc">here</a>.</p>
         <br>
         <p>To get started, you'll need to install <a href="http://cydiaimpactor.com">Cydia Impactor</a> on your
-          computer. Simply click the link and install it like any other program.</p>
+          computer. Select your operating system, download, and open the application. </p>
         <br>
+        <div class="column">
+            <img src="../img/installs/cydiaimpactor.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">Cydia Impactor, upon opening.</p>
+        </div>
+        <br>
+        <p>Next, connect your iOS device to your computer using a USB cable. Cydia Impactor should recognize your device and show the connection.</p>
+        <br>
+        <div class="column">
+            <img src="../img/installs/cydiaimpactorconnected.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">If your device isn't recognized immediately, make sure iTunes is installed.</p>
+            <p class="image-subtitle">If iTunes <em>is</em> installed, open iTunes and wait for your device to become recognized.</p>
+        </div>
+        <br>
+        <p>Once your device has been recognized, download your preferred <a href="https://en.wikipedia.org/wiki/.ipa">IPA</a> application file.</p>
+        <ul>
+            <li><i class="fab fa-github"></i>
+              <div style="display: inline; margin-left: 0.5em;">
+                <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.1.2/Undecimus-v3.1.2.ipa">
+                  unc0ver</a>
+            </div>
+          </li>
+          <li><i class="fas fa-code-branch" style="padding-left: 0.2em;"></i>
+            <div style="display: inline; margin-left: 0.7em;">
+              <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v3.1.2/Undecimus-v3.1.2.ipa">
+                unc0ver dark</a>
+          </div>
+        </li>
+        </ul>
+        <br>
+        <p>After the file has finished downloading, drag-and-drop the file onto the Cydia Impactor window.</p>
       </div>
 
     </div>

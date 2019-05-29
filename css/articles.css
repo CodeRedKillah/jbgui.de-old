@@ -343,20 +343,15 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 95vw;
-  height: 95vh;
-}
-
 #construction {
-  
   text-align: center;
   line-height: 52px;
   color: white;
-  font-size: 95vw; 
+  font-size: 95%vw; 
   float: center;
   white-space: nowrap;
 }
+
 #top {
   position: fixed;
   top: 52px;

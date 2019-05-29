@@ -343,7 +343,7 @@ html {
   text-align: center;
   line-height: 52px;
   color: white;
-  font-size: 1.28em; 
+  font-size: 120%; 
   float: center;
 }
 #top {

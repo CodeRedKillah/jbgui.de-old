@@ -345,6 +345,7 @@ html {
   color: white;
   font-size: 120%; 
   float: center;
+  white-space: nowrap;
 }
 #top {
   position: fixed;

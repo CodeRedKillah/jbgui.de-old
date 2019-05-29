@@ -344,8 +344,8 @@ html {
 }
 
 img {
-  width: 1vw;
-  height: 1vh;
+  width: 100%vw;
+  height: 100%vh;
 }
 
 #construction {
@@ -353,7 +353,7 @@ img {
   text-align: center;
   line-height: 52px;
   color: white;
-  font-size: 1vw; 
+  font-size: 100%vw; 
   float: center;
   white-space: nowrap;
 }

@@ -343,11 +343,17 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 1vw;
+  height: 1vh;
+}
+
 #construction {
+  
   text-align: center;
   line-height: 52px;
   color: white;
-  font-size: 120%; 
+  font-size: 1vw; 
   float: center;
   white-space: nowrap;
 }

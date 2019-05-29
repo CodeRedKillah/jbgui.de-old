@@ -317,6 +317,10 @@ navlink {
   font-weight: 600;
 }
 
+.notice-text {
+  display: inline-flex;
+}
+
 navbar-hr {
   color: #dddddd;
 }

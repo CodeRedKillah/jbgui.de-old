@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
   <title>Chimera - Jailbreak Guides</title>
@@ -75,7 +74,11 @@
 
 </head>
 
-<nav class="navbar is-fixed-top" aria-label="main navigation">
+<body>
+
+  <br>
+
+  <nav class="navbar is-fixed-top" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="https://jbgui.de">
         <img src="../img/logo.png" width="240" height="29" alt="JailbreakGuides">
@@ -121,13 +124,9 @@
       </div>
       <div class="navbar-end">
       </div>
-        </div>
   </nav>
 
-
-
 <body>
-
     <div id="top" style="background-color: #d64646; float: center; align-content: center; text-align: center; height: 52px;">
         <p id="construction">Pardon our mess, this site is currently under construction. Please check back later.</p></div>
                 <br>
@@ -136,9 +135,7 @@
                 <!-- Start here until we're finished 🤮-->
 
   <br>
-
-  <br>  
-  
+  <br>
   <div class="article-container">
 
     <div class="article-top">
@@ -150,25 +147,38 @@
           <div class="intro">
 
             <p class="big-title">Chimera</p>
-            <p class="big-title-subtitle">Jailbreak for iOS 12.0 - 12.1.2 (supports A12 devices)</p>
+            <p class="big-title-subtitle">Jailbreak for iOS 12.0 - 12.1.2</p>
+            <p class="big-title-smalltext">Created by <a href="https://twitter.com/coolstarorg">CoolStar</a> and the <a href="https://twitter.com/Electra_Team">Electra Team</a>  </p>
             <br>
             <br>
             <div class="sections-list">
               <p class="article-subtitle">Sections</p>
               <ul>
-                  <li><a class="section-list-item" href="#comparison">Chimera or unc0ver?</a></li>
-                <li><a class="section-list-item" href="#install-pc">Installation (with computer)
+
+                <li><a class="section-list-item" href="#about">What is Chimera?
+                  </a></li>
+                <li><a class="section-list-item" href="#compatible">Device Compatibility
+                  </a></li>
+                <li><a class="section-list-item" href="#install-pc">Installation
                   </a></li>
                 <li><a class="section-list-item" href="#install-nopc">Installation (no computer)
                   </a></li>
-
+                <li><a class="section-list-item" href="#remove">Removing Chimera
+                  </a></li>
+                <li><a class="section-list-item" href="#faq">FAQ
+                  </a></li>
 
               </ul>
-
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="scroll-more">
+                <p class="subtitle-scroll">Scroll to continue reading <a href="#about"><i class="fas fa-angle-down"></i></a></i></p>
             </div>
 
           </div>
-          
+
         </div>
 
         <div class="column">
@@ -176,56 +186,87 @@
             <img src="../img/chimera/chimera-promo.png" alt="Chimera"><br>
           </div>
         </div>
-
+        </div>
       </div>
-
-    </div>
-
     <div class="article-maintext">
-
-      <div id="install-pc">
-
-        <p class="article-subtitle">Installation (with computer)</p>
+          <div id="about" style="padding-top: 140px;">
+            <p class="article-subtitle">What is Chimera?</p>
+            <br>
+            <br>
+            <p class="article-text">
+              Chimera is a <a 
+              href="https://simple.wikipedia.org/wiki/Closed_source">closed-source</a> jailbreak tool for Apple devices with versions iOS 11.0 to 12.1.2.
+              Maintained by <a 
+              href="https://twitter.com/coolstarorg">CoolStar</a> and the <a 
+              href="https://twitter.com/Electra_Team">Electra Team</a>, this jailbreak tool uses a forked version of <a 
+              href="https://github.com/comex/substitute">Substitute</a>, also maintained by CoolStar, to load, run, and patch your system with tweaks in real time. This tool features <a 
+              href="https://jbgui.de/a12">support for A12 devices</a>, and a
+              modern, user-friendly interface for jailbreaking your iOS device.
+              </p>
+          </div>
+        </div>
+        <div id="compatible" style="padding-top: 140px;">
+            <p class="article-subtitle">Compatibility</p>
+            <br>
+            <br>
+            <p class="article-text">
+              placeholder text bc i dunno whats compatible yet
+              </p>
+          </div>
+      <div id="install-pc" style="padding-top: 140px;">
+        <p class="article-subtitle">Standard Installation</p>
         <br>
         <p class="article-text">
-                This is the preferred method of installing jailbreak apps onto one's device, but
-          there is a method to do it without a computer if needed. If you <em>have</em> a computer, then read on.
-        </p>
+          This is the preferred method of installing jailbreak apps onto one's device, but
+          there is a method to do it without a computer if needed. If you <em>don't</em> have a computer, click <a href="#install-nopc">here</a>.</p>
         <br>
-        <p>To get started, you'll need to install <a>Cydia Impactor</a> on your
-          computer. Simply click the link and install it like any other program. Next, you will need the ipa for Chimera
-          from <a href="https://chimera.sh">The Chimera website.</a> Once you have it downloaded, plug your device into your computer, open
-        Impactor and check if your device is seen. It should show as <code>&lt;Device Name&gt; [&lt;UUID&gt;]</code>.</p>
+        <p>To get started, you'll need to install <a href="http://cydiaimpactor.com">Cydia Impactor</a> on your
+          computer. Select your operating system, download, and open the application. </p>
         <br>
-        <p> Then, go to the menu and choose Device --&gt; Install Package. A file browser should open. Select the ipa for Chimera, then follow the instructions. If you run into any errors after entering your Apple ID, read <a href="https://jbgui.de/other/software/impactor">our page</a> on Impactor.<br>
-          <br>
-          Once the progressbar and text under the menus disappear with no errors, Chimera should be installed on your device. Before you open it, Head to settings, go to General --&gt; Profiles &amp; Device Management and tap the button with your Apple ID email. Press the blue trust button, and you should now be able to open the app.</p>
+        <div class="column">
+            <img src="../img/installs/cydiaimpactor.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">Cydia Impactor, upon opening.</p>
+        </div>
+        <br>
+        <p>Next, connect your iOS device to your computer using a USB cable. Cydia Impactor should recognize your device and show the connection.</p>
+        <br>
+        <div class="column">
+            <img src="../img/installs/cydiaimpactorconnected.png" alt="Cydia Impactor on macOS" style="max-width: 50%;">
+            <p class="image-subtitle">If your device isn't recognized immediately, make sure iTunes is installed.</p>
+            <p class="image-subtitle">If iTunes <em>is</em> installed, open iTunes and wait for your device to become recognized.</p>
+        </div>
+        <br>
+        <p>Once your device has been recognized, download the <a href="https://en.wikipedia.org/wiki/.ipa">IPA</a> application file.</p>
+        <br>
+        <ul>
+            <li><i class="fas fa-file-download"></i>
+              <div style="display: inline; margin-left: 0.5em;">
+                <a href="https://chimera.sh/downloads/ios/1.0.7.ipa">
+                  Chimera</a>
+            </div>
+          </li>
+        </ul>
+        <br>
+        <p>After the file has finished downloading, drag-and-drop the file onto the Cydia Impactor window.</p>
       </div>
+      <div id="install-nopc" style="padding-top: 140px;">
 
-      <br>
-
-      <div id="install-nopc">
-
-        <p class="article-subtitle">Installation (no computer)</p>
-        <br>
-          <p class="article-text"> <b>Note: This method only works when a signing service has a valid certificate.</b></p><br>
-        <p class="article-text">
-          On your apple device, navigate to <a href="https://jailbreaks.fun">jailbreaks.fun</a> in Safari. Scroll down until you find Chimera. Tap on it, then press the blue "GET" button. <br>
+          <p class="article-subtitle">Installation (no computer)</p>
           <br>
-          After waiting a few seconds a popup should appear asking you if you want to install it. Press install. In a few seconds the app should be on your home screen. <br>
-  <br>
-          Before you open it, open settings, go to General --&gt; Profiles &amp; Device Management and tap the developer under the heading "ENTERPRISE APP".&nbsp; Press the blue trust button, and you should now be able to open the app.<br>
-  <br>
-          Before pressing the jailbreak button, We recommend closing all other apps and turning off WiFI and Cellular Data to increase the success rate of the jailbreak.<br>
-<br>
-If your device reboots, unlock it, and wait at least 30 seconds before pressing the jailbreak button again.</p>
-        <br>
-      </div>
-
+            <p class="notice-text"> <b>Note: This method only works when a signing service has a valid certificate.</b></p>
+            <p style="display: inline;"><a href=""><i class="far fa-question-circle"></i></a></p>
+            <br>
+            <br>
+          <p class="article-text">
+            On your apple device, navigate to <a href="https://jailbreaks.fun">jailbreaks.fun</a> in Safari. Scroll down until you find Chimera. Tap on it, then press the blue "GET" button. <br>
+            <br>
+            After waiting a few seconds a popup should appear asking you if you want to install it. Press install. In a few seconds the app should be on your home screen. <br>
+    <br>
+            Before you open it, open settings, go to General --&gt; Profiles &amp; Device Management and tap the developer under the heading "ENTERPRISE APP".&nbsp; Press the blue trust button, and you should now be able to open the app.<br>
+    <br>
     </div>
 
-  </div>
-
+</div>
 </body>
 
 <footer>

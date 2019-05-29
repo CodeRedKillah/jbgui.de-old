@@ -304,6 +304,21 @@ navlink {
   list-style-type: none;
 }
 
+.subtitle-scroll {
+  padding-top: 275px;
+  font-family: "SF Text Light";
+  font-size: 0.8em;
+}
+
+.urgent-text {
+  display: inline-flex;
+  font-family: "SF Text Bold";
+  font-size: 14px;
+  color: #ff0800;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
 navbar-hr {
   color: #dddddd;
 }

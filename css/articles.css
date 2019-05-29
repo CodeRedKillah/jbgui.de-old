@@ -343,13 +343,7 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 95vw;
-  height: 95vh;
-}
-
 #construction {
-  
   text-align: center;
   line-height: 52px;
   color: white;
@@ -357,6 +351,7 @@ img {
   float: center;
   white-space: nowrap;
 }
+
 #top {
   position: fixed;
   top: 52px;
